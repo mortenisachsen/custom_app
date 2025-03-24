@@ -10,7 +10,7 @@ import { dirname, resolve } from 'path';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5173;
+const port = process.env.PORT || 10000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Configure CORS
