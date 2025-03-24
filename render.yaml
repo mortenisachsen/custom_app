@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: imagen-app
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REPLICATE_API_TOKEN
+        sync: false 

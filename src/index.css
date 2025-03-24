@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F8F7F4] text-[#1A1A1A] font-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal tracking-wide;
+  }
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-[#1A1A1A] text-white text-sm tracking-wider uppercase hover:bg-[#333333] transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border border-[#1A1A1A] text-[#1A1A1A] text-sm tracking-wider uppercase hover:bg-[#1A1A1A] hover:text-white transition-all duration-300;
+}
